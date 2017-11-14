@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  
+  .container#rollContainer
+    .starter-template
+      h1 AntRoll
+      p 随机数生成器
+      .input-group
+        span.input-group-addon 最小值
+        input.form-control(type='number' maxlength='40px')#min
+      br
+      .input-group
+        span.input-group-addon 最大值
+        input.form-control(type='number')#max
+
+      br
+      .input-group
+        span.input-group-addon 结&nbsp;&nbsp;&nbsp;果
+        input.form-control(type='text' readonly='true')#result
+      br
+      button.btn.btn-block.btn-success(onclick="roll()")
+        | Roll
+        
+      br
+
+      #roller(width="260px" height="100px" style="border:1px solid #d3d3d3;" onmousemove="cnvs_getCoordinates(event)" onmouseout="cnvs_clearCoordinates()")
+      br
+      br
+      .input-group
+        span.input-group-addon 坐&nbsp;&nbsp;&nbsp;标
+        input.form-control(type='text' readonly='true')#canvasDebug
+
+      script(type='text/javascript' src='/javascripts/roller.js')
+    // /.container
+  

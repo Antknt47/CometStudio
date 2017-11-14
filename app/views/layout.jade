@@ -1,0 +1,58 @@
+doctype html
+html(lang="zh-cn")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=0")
+    title Comet Studio
+    script(src='/js/jquery.js')
+    script(src='/js/bootstrap.js')
+    script(src='/javascripts/style.js')
+    script(src='/javascripts/kinetic-v5.1.0.js')
+    
+    script(src='/javascripts/jquery.particleground.js')
+    //script(src='/javascripts/ipinfo.js')
+    link(rel='stylesheet', href='/css/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+
+  
+  body
+    script(src='/javascripts/skybackground.js')
+    #particles(style="widght: 100%")
+      #intro
+        nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+          .container
+            .navbar-header
+              button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+                span.sr-only Toggle navigation
+                |             
+                span.icon-bar
+                |             
+                span.icon-bar
+                |             
+                span.icon-bar
+              |           
+              a.navbar-brand(href='/') Comet Studio
+            #navbar.collapse.navbar-collapse
+              ul.nav.navbar-nav
+                li.dropdown
+                  a.dropdown-toggle(href='#', data-toggle='dropdown')
+                    | 应用
+                    span.caret
+                  ul.dropdown-menu(role='menu')
+                    li
+                      a(href='/app/AntRoll') AntRoll - 一个简单的随机数生成器
+                 li.dropdown
+                  a.dropdown-toggle(href='#', data-toggle='dropdown')
+                    | 游戏
+                    span.caret
+                  ul.dropdown-menu(role='menu')
+                    li
+                      a(href='/game/conway') Conway's Game of Life - 康威生命游戏
+                    li
+                      a(href='/game/conway_large') Conway's Game of Life - 康威生命游戏 Large
+              ul.nav.navbar-nav.navbar-right
+                li
+                  a(href='/access') 访问统计
+
+        block content

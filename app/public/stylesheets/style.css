@@ -1,0 +1,63 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font: normal 14px/1.6 "Helvetica Neue","Helvetica","Lucida Grande","Arial","Hiragino Sans GB","Microsoft Yahei","WenQuanYi Micro Hei","sans-serif";
+
+}
+.starter-template {
+  text-align: center;
+}
+
+#rollContainer
+{
+    max-width: 400px;
+}
+
+a {
+  transition: color 0.2s linear;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.shadowTitle {
+  color: #FFF;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+}
+
+
+#particles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#intro {
+  margin-top: 50px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  padding: 0 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.block_container {
+  max-width: 80%;
+  min-width: 300px;
+  width:fit-content;
+  width:-webkit-fit-content;
+  width:-moz-fit-content;
+  background-color: rgba(255,255,255,0.7);
+  padding: 20px;
+  border-radius:15px;
+}
+
+#conway {
+cursor: crosshair;
+
+}

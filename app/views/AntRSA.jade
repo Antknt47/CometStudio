@@ -1,0 +1,34 @@
+extends layout
+
+
+block content
+    script(type='text/css' src='/stylesheets/AntRSA.css')
+    .container
+        .starter-template
+            h1=title
+            p RSA工具
+            textarea.form-control(rows=6)
+            
+            .btn-group
+                button.btn.btn-success(type="button")
+                    | 翻译 
+                    span.glyphicon.glyphicon-arrow-down
+                button.btn.btn-success.dropdown-toggle(type="button" data-toggle="dropdown")
+                    | 秘钥 
+                    span.caret
+            
+            
+            
+            br
+            br
+            textarea.form-control(rows=6)
+            
+            .btn-group
+                button.btn.btn-success(type="button")
+                    | 翻译 
+                    span.glyphicon.glyphicon-arrow-up
+                button.btn.btn-success.dropdown-toggle(type="button" data-toggle="dropdown")
+                    | 秘钥 
+                    span.caret
+            br
+    // /.container
